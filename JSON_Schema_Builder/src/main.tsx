@@ -4,5 +4,7 @@ import './index.css'
 
 
 createRoot(document.getElementById('root')!).render(
-  <h1>Hello there</h1>
+  <h1 class="text-3xl font-bold">
+    Hello world!
+  </h1>
 )
