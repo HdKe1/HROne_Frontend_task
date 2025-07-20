@@ -1,6 +1,7 @@
-const generateId = (): string => Math.random().toString(36).substr(2, 9);
+import { SchemaField } from "@/types/schema";
+export const generateId = (): string => Math.random().toString(36).substr(2, 9);
 
-const getDefaultValue = (type: string) => {
+export const getDefaultValue = (type: string) => {
   switch (type) {
     case 'string':
       return 'STRING';
@@ -13,7 +14,7 @@ const getDefaultValue = (type: string) => {
   }
 };
 
-const buildJsonSchema = (fields: SchemaField[]): any => {
+export const buildJsonSchema = (fields: SchemaField[]): any => {
   const schema: any = {};
   
   fields.forEach(field => {

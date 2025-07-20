@@ -1,4 +1,4 @@
-interface SchemaField {
+export interface SchemaField {
   id: string;
   name: string;
   type: 'string' | 'number' | 'nested';

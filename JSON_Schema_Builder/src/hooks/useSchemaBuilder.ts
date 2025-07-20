@@ -1,7 +1,8 @@
+import { useState, useEffect, useCallback } from 'react';
+import { SchemaField } from '@/types/schema';
+import { generateId,buildJsonSchema } from '@/utils/utils';
 
-import  { useState, useEffect, useCallback } from 'react';
-
-const useSchemaBuilder = () => {
+export const useSchemaBuilder = () => {
   const [fields, setFields] = useState<SchemaField[]>([
     {
       id: generateId(),
