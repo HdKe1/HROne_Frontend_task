@@ -1,8 +1,8 @@
 
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App'
+import JsonSchemaBuilder from './components/ui'
 
 createRoot(document.getElementById('root')!).render(
- <App></App>
+<JsonSchemaBuilder></JsonSchemaBuilder>
 )
