@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { SchemaField } from '@/types/schema';
+import type { SchemaField } from '@/types/schema';
 import { generateId,buildJsonSchema } from '@/utils/utils';
 
 export const useSchemaBuilder = () => {

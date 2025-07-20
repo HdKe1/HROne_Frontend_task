@@ -1,4 +1,4 @@
-import { SchemaField } from "@/types/schema";
+import type { SchemaField } from "@/types/schema";
 export const generateId = (): string => Math.random().toString(36).substr(2, 9);
 
 export const getDefaultValue = (type: string) => {
